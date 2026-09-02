@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wallet Watchlist"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Operator" />
+
+        <EditText
+            android:id="@+id/operator_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ops" />
+
+        <Button
+            android:id="@+id/save_operator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save session" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:text="Add wallet"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/wallet_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Wallet id" />
+
+        <EditText
+            android:id="@+id/wallet_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Label" />
+
+        <EditText
+            android:id="@+id/wallet_allowance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Allowance"
+            android:inputType="number"
+            android:text="100" />
+
+        <Button
+            android:id="@+id/add_wallet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:text="Treasury"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/treasury_balance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0" />
+
+        <EditText
+            android:id="@+id/deposit_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Deposit amount"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/deposit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deposit" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:text="Watchlist"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/status_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/wallet_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </LinearLayout>
+</ScrollView>
