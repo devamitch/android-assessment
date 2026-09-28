@@ -33,6 +33,16 @@
             android:layout_height="wrap_content"
             android:text="Save session" />
 
+        <!-- Added error state to show failures explicitly -->
+        <TextView
+            android:id="@+id/error_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FF0000"
+            android:paddingTop="8dp"
+            android:visibility="gone"
+            android:textStyle="bold" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -103,6 +113,15 @@
             android:id="@+id/status_filter"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
+
+        <!-- Added empty state to show when list is empty -->
+        <TextView
+            android:id="@+id/empty_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No wallets found."
+            android:paddingTop="8dp"
+            android:visibility="gone" />
 
         <LinearLayout
             android:id="@+id/wallet_list"
